@@ -11,12 +11,12 @@ branches:
 cache: node_modules # кеширование
 
 install:
-  - npm # команда установки зависимостей
+  - npm install # команда установки зависимостей
 
 build: off # отключаем встроенную в appveyor систему сборки
 
 build_script:
-  - npm build # команда сборки
+  - npm run build # команда сборки
 
 deploy_script: # скрипт развёртывания
   - git config --global credential.helper store
