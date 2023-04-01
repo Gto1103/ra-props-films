@@ -13,7 +13,7 @@
     "shortid": "^2.2.16",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/Gto1103/ra-props-films/tree/master/public",
+  "homepage": "https://github.com/Gto1103/ra-props-films/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
