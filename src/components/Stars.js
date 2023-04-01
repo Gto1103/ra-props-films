@@ -1,6 +1,4 @@
 import Star from './Star/Star';
-import shortId from 'shortid';
-
 
 const Stars = ({ count }) => {
 
@@ -8,16 +6,9 @@ const Stars = ({ count }) => {
 		return null;
 	}
 
-	let starList =[];
-	for (let i = 1; i <= count; i++) {
-		starList.push(
-			<li key = {shortId.generate()}><Star/></li>
-		);
-	}
-
 	return (
 		<ul className="card-body-stars u-clearfix">
-         {starList}
+         {[...Array(count)].map((_, idx) => <li key={idx}><Star /></li>)}
       </ul>
 	)
 }
